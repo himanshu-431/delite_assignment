@@ -27,7 +27,7 @@ const LogIn = () => {
         };
 
         try {
-            const response = await fetch("http://localhost:3000" + "/user/login", requestOptions);
+            const response = await fetch("https://delite-assignment-backend.vercel.app/" + "/user/login", requestOptions);
             navigate('/');
             // return responseChecker(response)
         }
