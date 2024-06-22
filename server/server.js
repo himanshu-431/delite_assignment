@@ -19,7 +19,7 @@ app.use(
         allowedHeaders: ['Content-Type'],
     })
 );
-
+app.use("/","hello")
 app.use("/user", UserRoute) // User Route
 
 // connection to db
