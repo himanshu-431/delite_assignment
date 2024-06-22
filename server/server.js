@@ -19,7 +19,11 @@ app.use(
         allowedHeaders: ['Content-Type'],
     })
 );
-app.use("/","hello")
+
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
+
 app.use("/user", UserRoute) // User Route
 
 // connection to db
