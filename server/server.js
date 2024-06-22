@@ -14,7 +14,7 @@ app.use(express.json())
 // Middleware for handling CORS POLICY
 app.use(
     cors({
-        origin: ["https://delite-assignment-frontend.vercel.app/"],
+        origin: ["https://delite-assignment-frontend.vercel.app"],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type'],
     })
