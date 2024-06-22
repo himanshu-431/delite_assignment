@@ -31,7 +31,7 @@ const SignUp = () => {
         };
 
         try {
-            const response = await fetch("http://localhost:3000" + "/user/register", requestOptions);
+            const response = await fetch("https://delite-assignment-backend.vercel.app/" + "/user/register", requestOptions);
             navigate('/');
             // return responseChecker(response)
         }
